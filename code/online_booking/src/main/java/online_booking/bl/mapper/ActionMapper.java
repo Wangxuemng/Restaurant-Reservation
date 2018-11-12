@@ -11,7 +11,7 @@ import java.util.Map;
 public interface ActionMapper {
 
     /**
-     * 订座
+     * reservation
      *
      * @param map
      * @return
@@ -19,7 +19,7 @@ public interface ActionMapper {
     int bookingSeat(Map<String, Object> map);
 
     /**
-     * 取消订座
+     * cancel reseration
      *
      * @param map
      * @return
@@ -27,7 +27,7 @@ public interface ActionMapper {
     int cancelBookingSeat(Map<String, Object> map);
 
     /**
-     * 拒绝订座
+     * reject reservation
      *
      * @param map
      * @return
@@ -35,7 +35,7 @@ public interface ActionMapper {
     int rejectBookingSeat(Map<String, Object> map);
 
     /**
-     * 确认订座
+     * confirm reservation
      *
      * @param map
      * @return
@@ -43,7 +43,7 @@ public interface ActionMapper {
     int confirmBookingSeat(Map<String, Object> map);
 
     /**
-     * 获取普通用户所有信息
+     * get all user information
      *
      * @param map
      * @return
@@ -51,7 +51,7 @@ public interface ActionMapper {
     List<Map<String, Object>> userMessages(Map<String, Object> map);
 
     /**
-     * 获取餐厅用户所有信息
+     * get all r information
      *
      * @param map
      * @return

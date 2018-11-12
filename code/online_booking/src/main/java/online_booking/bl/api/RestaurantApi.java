@@ -20,7 +20,7 @@ public class RestaurantApi {
     RestaurantMapper mRestaurantMapper;
 
     /**
-     * 添加餐厅【餐厅】
+     * add r
      *
      * @param user
      * @param name
@@ -40,7 +40,7 @@ public class RestaurantApi {
     }
 
     /**
-     * 获取餐厅列表【用户】
+     * show user
      *
      * @param name
      * @param type
@@ -61,7 +61,7 @@ public class RestaurantApi {
     }
 
     /**
-     * 获取餐厅类型列表【用户】
+     * get user
      *
      * @return
      */
@@ -72,7 +72,7 @@ public class RestaurantApi {
     }
 
     /**
-     * 获取自己的餐厅【餐厅】
+     * get r
      *
      * @param user
      * @return
@@ -99,7 +99,7 @@ public class RestaurantApi {
     }
 
     /**
-     * 获取单个餐厅的信息【用户】
+     * get single r
      *
      * @param restaurant_id
      * @param date
@@ -127,7 +127,7 @@ public class RestaurantApi {
 
 
     /**
-     * 给餐厅添加菜单【餐厅】
+     * add dish list
      *
      * @param restaurants_id
      * @param name
@@ -147,7 +147,7 @@ public class RestaurantApi {
     }
 
     /**
-     * 给餐厅添加坐席【餐厅】
+     * add seat
      *
      * @param restaurants_id
      * @param name
