@@ -21,7 +21,7 @@ public class ActionApi {
     ActionMapper mActionMapper;
 
     /**
-     * 添加订座【用户】
+     * add user
      * @param user
      * @param restaurant_id
      * @param seat_id
@@ -44,7 +44,7 @@ public class ActionApi {
     }
 
     /**
-     * 取消订座【用户】
+     * cancel user
      * @throws Exception
      */
     @PostMapping("/cancel")
@@ -57,7 +57,7 @@ public class ActionApi {
     }
 
     /**
-     * 拒绝订座【餐厅】
+     * reject r
      * @throws Exception
      */
     @PostMapping("/reject")
@@ -70,7 +70,7 @@ public class ActionApi {
     }
 
     /**
-     * 确认订座【餐厅】
+     * confirm r
      * @throws Exception
      */
     @PostMapping("/confirm")

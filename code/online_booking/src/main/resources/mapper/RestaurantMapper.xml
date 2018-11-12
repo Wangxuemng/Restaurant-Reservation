@@ -13,7 +13,7 @@
         </selectKey>
     </insert>
 
-    <!-- 餐厅列表 -->
+    <!-- achieve restaurant  -->
     <select id="list" parameterType="java.util.HashMap" resultType="java.util.HashMap">
         Select
         u.username,rt.name,rt.type,rt.id
@@ -31,7 +31,7 @@
         </if>
     </select>
 
-    <!-- 获取餐厅 -->
+    <!-- achieve restaurant  -->
     <select id="show" parameterType="java.util.HashMap" resultType="java.util.HashMap">
         Select
         rt.id,u.username,rt.name,rt.type
@@ -43,7 +43,7 @@
         </if>
     </select>
 
-    <!-- 菜单列表 -->
+    <!-- show restaurant -->
     <select id="dishsList" parameterType="int" resultType="java.util.HashMap">
         Select
         *
@@ -51,7 +51,7 @@
         where restaurant_id = #{restaurant_id}
     </select>
 
-    <!-- 添加菜单 -->
+    <!-- order list -->
     <insert id="dishsAdd" parameterType="java.util.HashMap">
       INSERT INTO dishs
       (restaurant_id, name, img)
@@ -59,7 +59,7 @@
       (#{restaurant_id}, #{name}, #{img});
     </insert>
 
-    <!-- 坐席列表 -->
+    <!-- add dish -->
     <select id="seatList" parameterType="int" resultType="java.util.HashMap">
         Select
         *
@@ -67,7 +67,7 @@
         where restaurant_id = #{restaurant_id}
     </select>
 
-    <!-- 添加坐席 -->
+    <!-- seat list -->
     <insert id="seatAdd" parameterType="java.util.HashMap">
       INSERT INTO seats
       (restaurant_id, name, total)
@@ -75,7 +75,7 @@
       (#{restaurant_id}, #{name}, #{total});
     </insert>
 
-    <!-- 坐席已定数量 -->
+    <!-- add seat -->
     <select id="bookingCount" parameterType="java.util.HashMap" resultType="int">
         Select
         count(*)
@@ -83,7 +83,7 @@
         where seat_id = #{seat_id} and status = 1 and date = #{date}
     </select>
 
-    <!-- 获取餐厅类型列表 -->
+    <!-- seat number -->
     <select id="types" parameterType="int" resultType="String">
         Select
         type

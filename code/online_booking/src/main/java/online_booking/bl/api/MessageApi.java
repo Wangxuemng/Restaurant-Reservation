@@ -19,7 +19,7 @@ public class MessageApi {
     ActionMapper mActionMapper;
 
     /**
-     * 获取消息列表
+     * get message
      * @throws Exception
      */
     @GetMapping("/list")

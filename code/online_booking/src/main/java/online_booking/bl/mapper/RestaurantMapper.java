@@ -11,7 +11,7 @@ import java.util.Map;
 public interface RestaurantMapper {
 
     /**
-     * 获取餐厅列表
+     * get r list
      *
      * @param map
      * @return
@@ -19,7 +19,7 @@ public interface RestaurantMapper {
     List<Map<String, Object>> list(Map<String, Object> map);
 
     /**
-     * 获取餐厅
+     * getr
      *
      * @param map
      * @return
@@ -27,7 +27,7 @@ public interface RestaurantMapper {
     Map<String, Object> show(Map<String, Object> map);
 
     /**
-     * 添加餐厅
+     * add r
      *
      * @param map
      * @return
@@ -35,7 +35,7 @@ public interface RestaurantMapper {
     int add(Map<String, Object> map);
 
     /**
-     * 菜单列表
+     * r list
      *
      * @param restaurants_id
      * @return
@@ -44,7 +44,7 @@ public interface RestaurantMapper {
 
 
     /**
-     * 添加菜单
+     * add list
      *
      * @param map
      * @return
@@ -52,7 +52,7 @@ public interface RestaurantMapper {
     int dishsAdd(Map<String, Object> map);
 
     /**
-     * 坐席列表
+     * seat list
      *
      * @param restaurants_id
      * @return
@@ -61,7 +61,7 @@ public interface RestaurantMapper {
 
 
     /**
-     * 添加坐席
+     * add list
      *
      * @param map
      * @return
@@ -69,14 +69,14 @@ public interface RestaurantMapper {
     int seatAdd(Map<String, Object> map);
 
     /**
-     * 坐席已定数量
+     * get seat number
      *
      * @return
      */
     int bookingCount(Map<String, Object> map);
 
     /**
-     * 获取餐厅类型列表
+     * get r type
      *
      * @return
      */
