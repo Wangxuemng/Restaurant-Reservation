@@ -10,28 +10,28 @@
       (#{user_id}, #{restaurant_id},#{seat_id},#{date}, #{message});
     </insert>
 
-    <!--取消订座-->
+    <!--cancal reservation-->
     <update id="cancelBookingSeat" parameterType="java.util.HashMap">
       UPDATE bookings SET status='3'
       WHERE
       id = #{id}
     </update>
 
-    <!--拒绝订座-->
+    <!--reject reservation-->
     <update id="rejectBookingSeat" parameterType="java.util.HashMap">
       UPDATE bookings SET status='2'
       WHERE
       id = #{id}
     </update>
 
-    <!--确认订座-->
+    <!--confirm reservation-->
     <update id="confirmBookingSeat" parameterType="java.util.HashMap">
       UPDATE bookings SET status='1'
       WHERE
       id = #{id}
     </update>
 
-    <!-- 查询用户所有信息 -->
+    <!-- check all user information -->
     <select id="userMessages" parameterType="java.util.HashMap" resultType="java.util.HashMap">
         Select
         bk.id,bk.restaurant_id,bk.seat_id,bk.user_id,bk.date,bk.message,bk.`status`,
@@ -42,7 +42,7 @@
         where bk.user_id = #{user_id}
     </select>
 
-    <!-- 查询餐厅用户所有信息 -->
+    <!-- check all owner information -->
     <select id="userMessages2" parameterType="java.util.HashMap" resultType="java.util.HashMap">
         Select
         bk.id,bk.restaurant_id,bk.seat_id,bk.user_id,bk.date,bk.message,bk.`status`,
